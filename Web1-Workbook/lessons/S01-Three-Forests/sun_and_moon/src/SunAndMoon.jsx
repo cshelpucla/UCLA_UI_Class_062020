@@ -1,8 +1,8 @@
 // Create component
 import React from 'react'
 
-const SunAndMoon = () => {     
-    return ( <img src="/images/sun.png" alt="Sun and Moon"/> ) 
+const SunAndMoon = ({whichImage}) => {     
+    return ( <img src= {whichImage} alt="Sun and Moon"/> ) 
 }
 
 export default SunAndMoon;
