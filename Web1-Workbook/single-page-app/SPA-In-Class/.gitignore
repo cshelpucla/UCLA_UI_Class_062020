@@ -4,9 +4,13 @@
 
 # dependencies
 /node_modules
+../../../node_modules
 
 # Mac generated files
 .DS_Store
 
 # App generated
 .vscode
+
+# remove lessons
+../../lessons/*

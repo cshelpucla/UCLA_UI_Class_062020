@@ -11,4 +11,5 @@ export default Footer;
 
 const FooterStyler = styled.footer`
     background-color: teal;
+    border-color: green;
 `;
