@@ -1,0 +1,19 @@
+Web Designer - a visual designer and is generally focused on design. 
+They're not usually involved in the implementation of the design, 
+but they might know light HTML and CSS so they can communicate 
+their ideas more effectively to the front-end developers.
+
+Front End Developer -  The front end refers to the “client-side” 
+interfaces a user sees in a website or software/mobile application. 
+A front-end web developer is responsible for the look, feel and user
+experience of the application. Typically, websites created by front-end 
+developers don’t need to interact with information stored in a database 
+to be functional. 
+
+Back End Developer - Back-end web developers work on the server-side 
+of a software application — all the infrastructure that the user 
+doesn’t see but which enables them to accomplish tasks in an 
+application. This type of web developer is most focused on site 
+responsiveness and speed, and monitoring site functionality is their 
+number one responsibility. Typically, a backend web developer oversees 
+a server, application and a database. 

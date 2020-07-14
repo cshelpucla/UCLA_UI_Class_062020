@@ -1,0 +1,13 @@
+Absolute paths contain a complete URL, which includes a protocol, 
+the website's domain name and possibly a specific file, subfolder, 
+or page name. 
+
+https://www.keycdn.com/blog/relative-path
+
+Conversely, a page relative link only includes the name of a specific 
+file or page, which is relative, to the current path. If you keep 
+all of your website's files in a single directory, you can establish links between pages as follows:
+
+<a href="page2.html">Next page</a>
+
+Site relative would include partial path in the path

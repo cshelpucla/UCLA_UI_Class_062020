@@ -1,0 +1,9 @@
+A single-page application (SPA) is a web application or website that
+interacts with the web browser by dynamically rewriting the current 
+web page with new data from the web server, 
+instead of the default method of the browser loading entire new pages.
+
+SPAs are faster than traditional web applications because they 
+execute the logic in the web browser itself rather than on the server. 
+And after the initial page load, only data is sent back and forth 
+instead of the entire HTML that reduces the bandwidth

@@ -1,0 +1,9 @@
+Separation of concerns is the idea that each  module or layer in 
+an application should only be responsible
+for one thing and should not contain code that deals with other things
+
+So, HTML only concerns with structure.  And CSS with how elements appear.
+And Javascript only responsible how user interacts with page and elements
+interact with other elements.
+
+

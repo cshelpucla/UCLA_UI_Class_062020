@@ -1,16 +1,26 @@
 import React from 'react'
 import styled from 'styled-components';
+import {BrowserRouter, Switch, Route } from 'react-router-dom'
+
+import Login from './Pages/Login';
+import Contact from './Pages/Contact';
+import Services from './Pages/Services';
+import Home from './Pages/Home';
 
 const Main = () => {
     return (
             <MainStyled>
-                <div className="nested-wrapper">
-                    <h1>My Page Title</h1>
-                    <h2>This subtitle is where I want to be</h2>
-                    <h3>Sub Sub Title</h3>
-                </div>    
+                <BrowserRouter >
+                    <Switch>                        
+                        <Route path='/login' component={ Login }/>
+                        <Route path='/contacts' component={ Contact }/>
+                        <Route path='/services' component={ Services }/>
+                        <Route path='/' component={ Home }/>
+                    </Switch>
+                </BrowserRouter> 
             </MainStyled>
-    )}
+    );
+}
 
 export default Main;
 

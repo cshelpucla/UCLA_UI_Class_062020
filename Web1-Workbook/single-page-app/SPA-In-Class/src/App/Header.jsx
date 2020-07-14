@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import styled from 'styled-components';
+// get our fontawesome imports
+import { faHome , faHotTub} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
     return (
         <div className="nested-wrapper">
-            <HeaderStyled>My Header</HeaderStyled>
+            <HeaderStyled>
+                <div className="nested-wrapper">
+                    <div className="row-container">
+                        <div className="logo"><FontAwesomeIcon icon={faHotTub}/></div>
+                        <div className="text">
+                            <h2>SPA Sanctuary</h2>
+                            <h3>SPA for Every Occasion</h3>
+                        </div>
+                    </div>
+                </div>    
+            </HeaderStyled>
         </div>
     );
 }
@@ -12,7 +25,36 @@ const Header = () => {
 export default Header;
 
 const HeaderStyled = styled.header`
-    background-color: teal;
-    padding: 20 px;
+    background-color: teal;    
     font-size: 30px;
+
+    .row-container {
+        display: flex;
+    }
+
+    .logo {
+        outline: solid 1px red;
+        color: #15b1b0;
+        margin-right : 10px;
+        svg {
+            width: 100px;
+            height: auto;
+        }
+    }
+
+    .text {
+        outline: solid 1px purple;
+        h2 {
+            marginL 0px;
+            font-size: 20px;
+            color: #34d4d;
+        }
+        h3 {
+            marginL 0px;
+            font-size: 10px;
+            color: #34d4d;
+
+        }
+    }
+
 `
