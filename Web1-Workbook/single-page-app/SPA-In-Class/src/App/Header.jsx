@@ -1,6 +1,8 @@
 import React, { forwardRef } from 'react'
 import styled from 'styled-components';
 // get our fontawesome imports
+
+import { mq } from '../common/mediaQueries.js'
 import { faHome , faHotTub} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -28,8 +30,17 @@ const HeaderStyled = styled.header`
     background-color: teal;    
     font-size: 30px;
 
+    @media (mq.tablet) {
+        background-color:orange;
+    }
+
+    @media (mq.desktop) {
+        background-color:purple;
+    }
+
     .row-container {
         display: flex;
+        justify-contents: center;
     }
 
     .logo {

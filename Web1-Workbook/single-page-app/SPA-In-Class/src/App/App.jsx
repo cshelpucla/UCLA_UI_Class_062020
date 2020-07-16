@@ -6,15 +6,18 @@ import Nav from './Nav.jsx';
 import Main from './Main.jsx';
 import Footer from './Footer.jsx';
 import NavBar from './NavBar.jsx';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
 
     return (        
-        <AppStyled className='App'>                                
+        <AppStyled className='App'>      
+          <BrowserRouter>
             <Header /> 
             <Nav />
             <Main />   
             <Footer />   
+        </BrowserRouter>                          
         </AppStyled>
     );
 }

@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import Helmet from 'react-helmet'
 
 const Contact = () => {
     return (
         <ContactStyled className='Contact'>
-            Contact
+            <Helmet>
+                <title>Contact :: SPA App</title>
+            </Helmet>
         </ContactStyled>
     );
 };

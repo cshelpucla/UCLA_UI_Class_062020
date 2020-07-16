@@ -9,15 +9,13 @@ import Home from './Pages/Home';
 
 const Main = () => {
     return (
-            <MainStyled>
-                <BrowserRouter >
+            <MainStyled>                
                     <Switch>                        
                         <Route path='/login' component={ Login }/>
                         <Route path='/contacts' component={ Contact }/>
                         <Route path='/services' component={ Services }/>
                         <Route path='/' component={ Home }/>
-                    </Switch>
-                </BrowserRouter> 
+                    </Switch>                
             </MainStyled>
     );
 }
