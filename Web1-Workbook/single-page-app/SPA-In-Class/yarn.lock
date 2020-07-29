@@ -1154,6 +1154,11 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.29.tgz#e1a456b643237462d390304cab6975ff3fd68397"
   integrity sha512-cY+QfDTbZ7XVxzx7jxbC98Oxr/zc7R2QpTLqTxqlfyXDrAJjzi/xUIqAUsygELB62JIrbsWxtSRhayKFkGI7MA==
 
+"@fortawesome/fontawesome-free@^5.13.0":
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.14.0.tgz#a371e91029ebf265015e64f81bfbf7d228c9681f"
+  integrity sha512-OfdMsF+ZQgdKHP9jUbmDcRrP0eX90XXrsXIdyjLbkmSBzmMXPABB8eobUJtivaupucYaByz6WNe1PI1JuYm3qA==
+
 "@fortawesome/fontawesome-svg-core@^1.2.26":
   version "1.2.29"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.29.tgz#34ef32824664534f9e4ef37982ebf286b899a189"
@@ -9298,6 +9303,13 @@ react-fast-compare@^2.0.2:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
+react-fontawesome@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/react-fontawesome/-/react-fontawesome-1.7.1.tgz#f74f5a338fef3ee3b379820109c1cba47290f035"
+  integrity sha512-kottReWW1I9Uupub6A5YX4VK7qfpFnEjAcm5zB4Aepst7iofONT27GJYdTcRsj7q5uQu9PXBL7GsxAFKANNUVg==
+  dependencies:
+    prop-types "^15.5.6"
+
 react-helmet@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-5.2.1.tgz#16a7192fdd09951f8e0fe22ffccbf9bb3e591ffa"
@@ -9322,7 +9334,7 @@ react-responsive-carousel@^3.1.51:
     prop-types "^15.5.8"
     react-easy-swipe "^0.0.18"
 
-react-router-dom@^5.1.2:
+react-router-dom@^5.1.2, react-router-dom@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.2.0.tgz#9e65a4d0c45e13289e66c7b17c7e175d0ea15662"
   integrity sha512-gxAmfylo2QUjcwxI63RhQ5G85Qqt4voZpUXSEqCwykV0baaOTQDR1f0PmY8AELqIyVc0NEZUj0Gov5lNGcXgsA==
@@ -9417,6 +9429,14 @@ react-side-effect@^1.1.0:
   integrity sha512-v1ht1aHg5k/thv56DRcjw+WtojuuDHFUgGfc+bFHOWsF4ZK6C2V57DO0Or0GPsg6+LSTE0M6Ry/gfzhzSwbc5w==
   dependencies:
     shallowequal "^1.0.1"
+
+react-sidebar-ui@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-sidebar-ui/-/react-sidebar-ui-1.2.0.tgz#cf630b11f4751c64298b829961f1e5d2d6324df9"
+  integrity sha512-yaH+aVSfeXf1m+g/MWVd264GjQFV7YOTbLzLswsJZwuCmVX49Y7Pg0OQzXNbhler87+wCYw53iSMQ1uzOdswvg==
+  dependencies:
+    "@fortawesome/fontawesome-free" "^5.13.0"
+    react-router-dom "^5.2.0"
 
 react@^16.12.0:
   version "16.13.1"
