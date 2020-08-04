@@ -1,0 +1,18 @@
+
+Definition of agile
+
+Agile project management is an iterative development methodology that values human communication and feedback, 
+adapting to change, and producing working results.
+
+Agile is iterative, meaning that it is done in pieces (sprints), with each sprint building and improving off the 
+lessons from the previous sprint. This is where that term Scrum comes into play. What is Scrum? Scrum methodology 
+is a workflow framework made up of sprints and reviews used to promote Agile project management.
+
+Pros and cons of Agile
+
+What are the pros and cons of using agile methodology?
+
+Pros	                        Cons
+More flexible	                Hard to predict
+Product get to market faster	Final product is not released first
+Better communication	        Documentation gets left behind

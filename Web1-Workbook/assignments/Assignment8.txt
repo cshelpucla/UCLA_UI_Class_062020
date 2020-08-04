@@ -1,0 +1,17 @@
+
+Define the following roles:
+
+ProjectManager - Leads and controls project scope, schedule, resourcing and customer interaction
+
+BusinessAnalyst - Provides detailed definition of what is being built in an effor to solve customer
+business proble.  Refines business problem definition.
+
+ScrumMaster - Manages Agile methodology managerial struture and handles Scum duties and runs scurms
+
+UXdesigner - Develops look of the application as it appears to the customer/end user
+
+Web Developer/Engineer - Implements funtins defined by business analyst and UXdesigner
+
+Quality Assurance Tester - Tests completed versions of the application
+
+DevOps - deploys and maintains application in production

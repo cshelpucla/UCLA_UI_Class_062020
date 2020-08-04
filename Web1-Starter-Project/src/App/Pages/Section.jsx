@@ -1,15 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import PopulateTree from '../Components/PopulateTree';
+import ReelContainer from '../sjs/ReelContainer';
 
 const Section = ({chosenTab}) => {
     return (
         <SectionStyled className='Section'>
             <TestTreeStyled className='TestSection'>
                 <PopulateTree/>
-                <TestFormStyled className='TestForm'>
-                    <b>Test Form</b>
-                </TestFormStyled>
+                <ReelContainer/>
             </TestTreeStyled>
         </SectionStyled>
     )

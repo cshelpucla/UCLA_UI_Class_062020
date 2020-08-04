@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import 'react-tabulator/lib/styles.css'; // required styles
 import 'react-tabulator/lib/css/tabulator.min.css'; // theme
 import { ReactTabulator } from 'react-tabulator'; // for React 15.x, use import { React15Tabulator }
+import ReelContainer from '../sjs/ReelContainer';
 
 const columns = [
     { title: "Name", field: "name", width: 150 },
@@ -21,15 +22,21 @@ const columns = [
     {id:5, name:"Margret Marmajuke", age:"16", col:"yellow", dob:"31/01/1999"},
   ];  
 
-const About = () => {
-    return (
-        <AboutStyled>
+
+/*
             <ReactTabulator
             data={data}
             columns={columns}
             tooltips={true}
             layout={"fitData"}
             />        
+
+*/
+
+const About = () => {
+    return (
+        <AboutStyled>
+            <ReelContainer/>
         </AboutStyled>
     )
 }

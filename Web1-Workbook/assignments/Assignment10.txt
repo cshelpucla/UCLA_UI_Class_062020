@@ -1,0 +1,10 @@
+
+What are testing environments? What is the difference between Local, Dev, QA and Production?
+
+Local -  Where application is being built by a single developer ( his own machne )
+
+Dev - Where application is being created by a group of develoers
+
+QA - Where the application is being tested
+
+Production - final location from which application is delivered to the customer

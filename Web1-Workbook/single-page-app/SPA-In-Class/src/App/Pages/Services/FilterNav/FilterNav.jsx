@@ -1,30 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 import FilterNavButton from './FilterNavButton';
+import { mq } from '../../../../common/mediaQueries'
 
-
-const FilterNav = ({services,currCategory}) => {
+const FilterNav = ({services, currCategory, currCategorySet}) => {
     
+
     const renderImages = () => {
         return services.categories.map((item, idx) => {
-            return <FilterNavButton key={idx} category={item} />
+            return <FilterNavButton key={idx} name={item} 
+            currCategory={currCategory}
+            currCategorySet={currCategorySet}
+            />
         });
     }
     
     return (
-        <FilterNavStyled className='Gallery'>
-            {renderImages()}
-        </FilterNavStyled>
+        <div className="nested-wrapper">
+            <FilterNavStyled className='Gallery'>
+                {renderImages()}
+            </FilterNavStyled>
+        </div>
     );
 };
 
 export default FilterNav;
 
-const FilterNavStyled  = styled.div`
-    background-color: teal;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: flex-end;
-    justify-content: flex-start;
-`;
+const FilterNavStyled = styled.nav`
+    text-align: center;
+`

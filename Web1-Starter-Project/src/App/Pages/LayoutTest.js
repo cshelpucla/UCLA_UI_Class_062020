@@ -7,6 +7,7 @@ import classNames from 'classnames/bind';
 import styled from 'styled-components'
 import PopulateTree from "../Components/PopulateTree.js";
 import FormikView from "../Components/FormikView.js";
+import ReelContainer from '../sjs/ReelContainer'
 
 let cx = classNames.bind(style);
 /*<DemoTreeFetch id="1" name="Applications" />*/
@@ -26,13 +27,13 @@ export default () => (
         </div>
     </ResizePanel>
       <div className={cx('content', 'panel')}>
-        <div><FormikView/></div>
+        <div><ReelContainer/></div>
       </div>
     <ResizePanel direction="w" style={{ flexGrow: '1' }} 
            handleClass={style.customHandle} 
            borderClass={style.customResizeBorder}>
        <div className={cx('sidebar', 'panel')}>
-          <div>SideBar</div>
+          <div><FormikView/></div>
         </div>
       </ResizePanel>
     </div>

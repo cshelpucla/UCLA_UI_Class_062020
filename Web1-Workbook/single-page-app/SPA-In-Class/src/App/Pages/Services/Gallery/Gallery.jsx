@@ -5,8 +5,10 @@ import GalleryItem from './GalleryItem';
 const Gallery = ({services,currCategory}) => {
     
     const renderImages = () => {
-        return services.packages.map((item, idx) => {
-            return <GalleryItem key={idx} image={item.image} title={item.title}/>
+        return services.packages.filter((item,idx) => {
+            return (item.category === currCategory)            
+        }).map((item, idx) => {
+            return <GalleryItem key={idx} item={item} />
         });
     }
     
@@ -20,10 +22,7 @@ const Gallery = ({services,currCategory}) => {
 export default Gallery;
 
 const GalleryStyled  = styled.div`
-    background-color: teal;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: flex-end;
-    justify-content: flex-start;
 `;

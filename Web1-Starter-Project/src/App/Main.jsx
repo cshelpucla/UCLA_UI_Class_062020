@@ -8,18 +8,19 @@ import Runner from './Pages/Runner.jsx';
 import Home from './Pages/Home.jsx';
 import LayoutTest from './Pages/LayoutTest.js';
 import FormikView from './Components/FormikView.js';
+import ReelContainer from './sjs/ReelContainer.jsx';
 
 const Main = () => {
     return (
             <MainStyled>                
                     <Switch>                        
                         <Route path='/builder' component={ Builder }/>
-                        <Route path='/runner' component={ Runner }/>
+                        <Route path='/runner' component={ LayoutTest }/>
                         <Route path='/layout' component={ LayoutTest }/>
-                        <Route path='/fbuild' component={ FormikView }/>
+                        <Route path='/fbuild' component={ Builder }/>
                         <Route path='/fview' component={ FormikView }/>
-                        <Route path='/about' component={ About }/>
-                        <Route path='/' component={ LayoutTest }/>
+                        <Route path='/about' component={ LayoutTest }/>
+                        <Route path='/' component={ ReelContainer }/>
                     </Switch>                
             </MainStyled>
     );

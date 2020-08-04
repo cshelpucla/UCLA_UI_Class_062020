@@ -1,0 +1,16 @@
+
+
+Category	Palette	Use for
+
+JPG	Lossy	Millions of colors	        Still Images
+                                        Photography
+GIF	Lossless	Maximum 256 colors	    Simple animations
+                                        Graphics with flat colors
+                                        Graphics without gradients
+PNG-8	Lossless	Maximum 256 colors	Similar to GIF
+                                        Better transparency but no animation
+                                        Great for icons
+PNG-24	Lossless	Unlimited colors	Similar to PNG-8
+                                        Handles still images and transparency
+SVG	Vector/lossless	Unlimited colors	Graphics/logos for web
+                                        Retina/high-dpi screens

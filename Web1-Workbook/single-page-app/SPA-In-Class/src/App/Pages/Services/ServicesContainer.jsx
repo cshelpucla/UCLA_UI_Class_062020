@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Helmet from 'react-helmet'
 import FilterNav from './FilterNav/FilterNav';
 import Gallery from './Gallery/Gallery';
 
@@ -13,7 +12,10 @@ const ServicesContainer = () => {
 
     return (
         <ServicesContainerStyled className='Home'>
-            <FilterNav services={services} currCategory={currCategory}/>
+            <FilterNav  services={services} 
+                        currCategory={currCategory}
+                        currCategorySet={currCategorySet}
+            />
             <Gallery services={services} currCategory={currCategory}/>
         </ServicesContainerStyled>
     );
