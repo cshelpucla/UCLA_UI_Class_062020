@@ -6,7 +6,8 @@ import Gallery from './Gallery/Gallery';
 import { services } from './servicesData'
 
 const ServicesContainer = () => {
-    const [currCategory,currCategorySet] = useState(services.categories[0])
+    //const [currCategory,currCategorySet] = useState(services.categories[0])
+    const [currCategory,currCategorySet] = useState('All')
 
     console.log(currCategory)
 

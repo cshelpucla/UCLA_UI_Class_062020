@@ -1,14 +1,34 @@
-import React from 'react'
+import React , { useState } from 'react'
 import styled from 'styled-components'
 import {mq} from '../../../common/mediaQueries'
+import Lightbox from '../../../common/Lightbox'
 
 const StaffMember = ({member}) => {
+
+    const [showLBox, showLBoxUpdate] = useState(false);
+    
+    const turnOn = () => {
+        showLBoxUpdate(true)
+    } 
+
+    const turnOff = () => {
+        showLBoxUpdate(false)
+    } 
     
     return (
         <StaffMemberStyled >
-            <img src={member.image} alt={member.name}></img>
+            <img src={member.image} alt={member.name} onClick={ turnOn }/>
             <div className="title"> {member.name}</div>
+
+        <Lightbox show={ showLBox } hideAction={ turnOff } width={300}>
+            <div className="category">{ member.category }</div>
+            <img src={member.image} alt={member.title} />
+            <div className="title">{ member.title }</div>
+
+            <div className="description">{ member.name }</div>            
+        </Lightbox>            
         </StaffMemberStyled>
+
     )
 }
 
@@ -35,5 +55,11 @@ const StaffMemberStyled = styled.div`
 
     @media (mq.desktop) {
         width: 200px;
+    }
+
+    .Lightbox {
+        title {
+            background-color: teal;            
+        }
     }
 `;

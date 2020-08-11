@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { mq } from '../common/mediaQueries.js'
 import { faHome , faHotTub} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ReactComponent as Logo }  from '../common/logo/wps-logo.svg'
 
 const Header = () => {
     return (
@@ -12,7 +13,9 @@ const Header = () => {
             <HeaderStyled>
                 <div className="nested-wrapper">
                     <div className="row-container">
-                        <div className="logo"><FontAwesomeIcon icon={faHotTub}/></div>
+                        <div className="logo">
+                            <Logo/>
+                        </div>
                         <div className="text">
                             <h2>SPA Sanctuary</h2>
                             <h3>SPA for Every Occasion</h3>
