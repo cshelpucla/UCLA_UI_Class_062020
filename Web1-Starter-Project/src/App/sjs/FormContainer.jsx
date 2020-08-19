@@ -1,9 +1,6 @@
-import React, { Component , Grid } from "react";
-import ReactDOM from "react-dom";
-
-import SurveyEditor from "./SurveyEditor"
+import React, { Component } from "react";
+import SurveyCreator from "./SurveyCreator"
 import surveyConfig from './breakfast-survey.json';
-import SplitPane, { Pane } from 'react-split-pane';
 
 class FormContainer extends React.Component {
   constructor() {
@@ -49,24 +46,10 @@ class FormContainer extends React.Component {
     const { seo_title } = this.state;
     const reelContainerStyle = {  width: this.state.reelContainerWidth-50, height: this.state.reelContainerHeight-50 };
     return (
-          <SurveyEditor config={surveyConfig} updateConfig={surveyConfig}  />   
+          <SurveyCreator config={surveyConfig} updateConfig={surveyConfig}  />   
     );
   }
 }
 
 export default FormContainer;
 
-/*
-const wrapper = document.getElementById("create-article-form");
-wrapper ? ReactDOM.render(<FormContainer />, wrapper) : false;
-
-<Input width="200%"
-text="SEO title"
-label="seo_title"
-type="text"
-id="seo_title"
-value={seo_title}
-handleChange={this.handleChange}
-/>
-<br/>
-*/

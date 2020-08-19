@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Deets from './Contact/Deets';
 import GoogleMaps from './Contact/GoogleMaps';
 import ContactForm from './Contact/ContactForm';
+//import ContactForm2 from './Contact/ContactForm2';
 
 const Contact = () => {
     return (

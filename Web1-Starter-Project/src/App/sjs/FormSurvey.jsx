@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
+
 import * as Survey from "survey-react";
 import "survey-react/survey.css";
 

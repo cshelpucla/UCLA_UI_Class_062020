@@ -24,10 +24,10 @@ export default App;
 
 const AppStyled = styled.div`
     .nested-wrapper {
-        max-width: 2400px;
+        
         margin: auto;
         outline: solid red 1px;
-        padding: 10px;
+        padding: 1px;
         
     }
 `;

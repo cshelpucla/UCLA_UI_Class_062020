@@ -1,0 +1,248 @@
+{
+    "title": "Breakfast Survey",
+    "completedHtml": "<h2>Thank you for your order. Your breakfast is on the way!</h2>\n<img src='https://atmedia.imgix.net/bf4b7352d2fb7e631851a348187ded2f1fd28641?auto=format&q=45&w=640.0&h=430.0&fit=max&cs=strip' />",
+    "pages": [
+     {
+      "name": "First",
+      "elements": [
+       {
+        "type": "radiogroup",
+        "name": "eggType",
+        "title": "What type of eggs do you prefer?",
+        "choices": [
+         {
+          "value": "overEasy",
+          "text": "Over Easy"
+         },
+         {
+          "value": "scrambled",
+          "text": "Scrambled"
+         },
+         {
+          "value": "sunnySideUp",
+          "text": "Sunny Side Up"
+         },
+         {
+          "value": "chefsSurprise",
+          "text": "Surprise Me!"
+         }
+        ]
+       },
+       {
+        "type": "matrix",
+        "name": "meatSelection",
+        "title": "What type of meats and portion-size would you like?",
+        "columns": [
+         {
+          "value": "Column 1",
+          "text": "Elf"
+         },
+         {
+          "value": "Column 2",
+          "text": "Human"
+         },
+         {
+          "value": "Column 3",
+          "text": "Dwarf/Hobbit"
+         }
+        ],
+        "rows": [
+         {
+          "value": "bacon",
+          "text": "Bacon"
+         },
+         {
+          "value": "sausage",
+          "text": "Sausage"
+         },
+         {
+          "value": "steak",
+          "text": "Steak"
+         }
+        ]
+       },
+       {
+        "type": "rating",
+        "name": "toastPreference",
+        "title": "How do you like your toast?",
+        "minRateDescription": "Light",
+        "maxRateDescription": "Charcoal"
+       },
+       {
+        "type": "matrixdropdown",
+        "name": "cookingStyle",
+        "title": "How would you like your dishes cooked?",
+        "columns": [
+         {
+          "name": "cookingStyle",
+          "title": "Done-ness",
+          "isRequired": true
+         }
+        ],
+        "choices": [
+         {
+          "value": 1,
+          "text": "1- Rare / Raw"
+         },
+         {
+          "value": 2,
+          "text": "2- Medium Rare"
+         },
+         {
+          "value": 3,
+          "text": "3- Medium"
+         },
+         {
+          "value": 4,
+          "text": "4- Well-done"
+         },
+         {
+          "value": 5,
+          "text": "5- Charred"
+         }
+        ],
+        "rows": [
+         {
+          "value": "potatoes",
+          "text": "Potatoes"
+         },
+         {
+          "value": "meat",
+          "text": "Bacon, Sausage, Steak"
+         }
+        ]
+       },
+       {
+        "type": "checkbox",
+        "name": "sideOrders",
+        "title": "What other sides would you like?",
+        "choices": [
+         {
+          "value": "bagel",
+          "text": "Bagel with creamcheese"
+         },
+         {
+          "value": "extraBacon",
+          "text": "Extra Bacon!"
+         },
+         {
+          "value": "fruit",
+          "text": "Fruit cup"
+         }
+        ]
+       },
+       {
+        "type": "comment",
+        "name": "specialInstructions",
+        "title": "Do you have any special instructions for your breakfast?"
+       }
+      ],
+      "title": "First Breakfast"
+     },
+     {
+      "name": "Second",
+      "elements": [
+       {
+        "type": "rating",
+        "name": "hungerRating",
+        "title": "How hungry for second breakfast are you? (really!)",
+        "isRequired": true,
+        "minRateDescription": "Full ",
+        "maxRateDescription": "Starving!"
+       },
+       {
+        "type": "dropdown",
+        "name": "question1",
+        "title": "What type of eggs would you like?",
+        "choices": [
+         {
+          "value": "overEasy",
+          "text": "Over Easy"
+         },
+         {
+          "value": "scrambled",
+          "text": "Scrambled"
+         },
+         {
+          "value": "sunnySideUp",
+          "text": "Sunny Side Up"
+         },
+         {
+          "value": "chefsSurprise",
+          "text": "Surprise Me!"
+         }
+        ]
+       },
+       {
+        "type": "checkbox",
+        "name": "sideOrder2",
+        "title": "What other sides would you like?",
+        "choices": [
+         {
+          "value": "bagel",
+          "text": "Bagel with creamcheese"
+         },
+         {
+          "value": "extraBacon",
+          "text": "MORE Bacon!"
+         },
+         {
+          "value": "fruit",
+          "text": "Fruit cup"
+         }
+        ]
+       },
+       {
+        "type": "radiogroup",
+        "name": "favoriteMeal",
+        "title": "What's your favorite breakfast meal?",
+        "isRequired": true,
+        "choices": [
+         {
+          "value": "breakfast",
+          "text": "Breakfast"
+         },
+         {
+          "value": "second",
+          "text": "Second Breakfast"
+         },
+         {
+          "value": "brunch",
+          "text": "Brunch"
+         },
+         {
+          "value": "elevensies",
+          "text": "Elevensies!"
+         }
+        ]
+       },
+       {
+        "type": "multipletext",
+        "name": "companyMembers",
+        "title": "Please enter the names of those in your company:",
+        "items": [
+         {
+          "name": "text1",
+          "title": "Humans:"
+         },
+         {
+          "name": "text2",
+          "title": "Dwarves:"
+         },
+         {
+          "name": "text3",
+          "title": "Elves:"
+         },
+         {
+          "name": "text4",
+          "title": "Hobbits:"
+         }
+        ]
+       }
+      ],
+      "title": "Second Breakfast"
+     }
+    ],
+    "sendResultOnPageNext": true,
+    "showProgressBar": "top"
+   }

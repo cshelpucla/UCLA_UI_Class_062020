@@ -8,12 +8,16 @@ import styled from 'styled-components'
 import PopulateTree from "../Components/PopulateTree.js";
 import FormikView from "../Components/FormikView.js";
 import ReelContainer from '../sjs/ReelContainer'
+import FormSurvey from "../sjs/FormSurvey.jsx";
+import FormContainer from "../sjs/FormContainer.jsx";
+import surveyConfig from '../sjs/breakfast-survey.json';
+import SurveyCreator from "../sjs/SurveyCreator"
 
 let cx = classNames.bind(style);
 /*<DemoTreeFetch id="1" name="Applications" />*/
 
 export default () => (
-  <div className={cx('container')}>
+  <HomeStyled className={cx('container')}>
     <ResizePanel direction="s">
       <div className={cx('header', 'panel')}>
         Top bar
@@ -27,7 +31,7 @@ export default () => (
         </div>
     </ResizePanel>
       <div className={cx('content', 'panel')}>
-        <div><ReelContainer/></div>
+        <div><SurveyCreator config={surveyConfig}  />   </div>
       </div>
     <ResizePanel direction="w" style={{ flexGrow: '1' }} 
            handleClass={style.customHandle} 
@@ -50,7 +54,7 @@ export default () => (
         </div>
       </div>
     </ResizePanel>
-  </div>
+  </HomeStyled>
 );
 
 const HomeStyled = styled.span`

@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import SplitPane, { Pane } from 'react-split-pane';
-import FormContainer from "./FormContainer.jsx"
-import FormSurvey from "./FormSurvey.jsx"
 
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
@@ -11,6 +7,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import SurveyWrapper from "./SurveyWrapper.js";
+import SurveyCreator from "./SurveyCreator.js";
+import styled from 'styled-components';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -57,8 +56,11 @@ export default function ReelContainer() {
     setValue(newValue);
   };
 
+
+//<FormContainer/>
+//<FormSurvey/>
   return (
-    <div className={classes.root}>
+    <SurveyCreatorStyled>
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
           <Tab label="Item One" {...a11yProps(0)} />
@@ -67,17 +69,26 @@ export default function ReelContainer() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <FormContainer/>
+      <SurveyWrapper/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <FormSurvey/>
+      <SurveyCreatorStyled>
+        <SurveyCreator/>
+      </SurveyCreatorStyled>
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
       </TabPanel>
-    </div>
+    </SurveyCreatorStyled>
   );
 }
 
+const SurveyCreatorStyled = styled.div`
+        
+        margin: auto;
+        outline: solid red 1px;
+        padding: 1px;
+        
+`;
 //const wrapper = document.getElementById("survey-container");
 //wrapper ? ReactDOM.render(<ReelContainer />, wrapper) : false;
